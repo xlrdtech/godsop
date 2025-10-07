@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.O.D. SOP Tech Stack Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            height: 320px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #7a5195, #ef5675);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black mb-2 gradient-text">G.O.D. SOP TECH STACK</h1>
+            <p class="text-lg md:text-xl text-slate-600">An Interactive Overview of the 27-Tool Ecosystem for Peak Efficiency</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="stat-card">
+                    <h3 class="text-5xl font-extrabold text-[#003f5c]">27</h3>
+                    <p class="text-slate-500 mt-1">Total Tools</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="text-5xl font-extrabold text-[#7a5195]">$300.98</h3>
+                    <p class="text-slate-500 mt-1">Total Monthly Cost</p>
+                </div>
+                <div class="stat-card col-span-2">
+                    <h3 class="text-5xl font-extrabold text-[#ff764a]">9-9-9</h3>
+                    <p class="text-slate-500 mt-1">Perfect G.O.D. Framework</p>
+                </div>
+            </div>
+            <div>
+                 <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-center mb-4">Monthly Cost Contribution by Layer</h2>
+                    <p class="text-center text-slate-600 mb-4">The Distribute layer constitutes the largest portion of the monthly expenditure, driven by high-impact CRM and community platforms.</p>
+                    <div class="chart-container">
+                        <canvas id="totalCostChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+             <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold">The G.O.D. Framework Workflow</h2>
+                <p class="text-slate-600 max-w-3xl mx-auto mt-2">The ecosystem is built on a logical three-stage flow: creating assets, managing operations, and delivering value to clients. Each layer seamlessly feeds into the next, creating a unified and powerful operational pipeline.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-t-4 border-[#374c80]">
+                    <h3 class="text-2xl font-bold mb-2">💡 GENERATE</h3>
+                    <p class="text-slate-600">Content creation, AI R&D, and proprietary asset generation to maintain an "AI-First Strategy".</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-t-4 border-[#bc5090]">
+                    <h3 class="text-2xl font-bold mb-2">⚙️ OPERATE</h3>
+                    <p class="text-slate-600">Project management, team collaboration, and core business operations, including finance.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-t-4 border-[#ffa600]">
+                    <h3 class="text-2xl font-bold mb-2">🚀 DISTRIBUTE</h3>
+                    <p class="text-slate-600">Client delivery, sales pipeline management, payment processing, and external communications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="generate" class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-center mb-2">GENERATE Layer Analysis</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">This layer is the creative and intellectual core of the stack. It's dominated by AI-driven tools for content, research, and automation. Sintra.ai represents the most significant investment, serving as a powerful AI overlay for marketing and CRM activities.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-center mb-4">Tool Cost Breakdown (List Price)</h3>
+                        <div class="chart-container" style="height:400px;">
+                            <canvas id="generateLayerChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-slate-100 rounded-lg">
+                            <h4 class="font-bold text-[#003f5c]">Key Insight</h4>
+                            <p class="text-sm text-slate-700">The "AI-First Strategy" is evident, with 7 of the 9 tools being AI-centric platforms for content, automation, and research, underscoring a commitment to innovation.</p>
+                        </div>
+                         <div class="p-4 bg-slate-100 rounded-lg">
+                            <h4 class="font-bold text-[#003f5c]">Promise & Positioning</h4>
+                            <p class="text-sm text-slate-700">Tools like <span class="font-semibold">Trae.ai</span> and <span class="font-semibold">Me.bot</span> promise hyper-personalized AI workflows, effectively creating a digital extension of the user's strategic mind for maximum leverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="operate" class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-center mb-2">OPERATE Layer Analysis</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">The operational backbone of the ecosystem, this layer focuses on structure, collaboration, and financial management. Costs are well-distributed among essential business software, with a strong emphasis on free-tier tools for development and communication to optimize spending.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-center mb-4">Tool Cost Breakdown</h3>
+                         <div class="chart-container" style="height:400px;">
+                            <canvas id="operateLayerChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                       <div class="p-4 bg-slate-100 rounded-lg">
+                            <h4 class="font-bold text-[#7a5195]">Key Insight</h4>
+                            <p class="text-sm text-slate-700">Nearly half the tools in this layer (4 of 9) are on free tiers, including foundational development tools like GitHub and Docker, showcasing strategic cost control in core technical operations.</p>
+                        </div>
+                         <div class="p-4 bg-slate-100 rounded-lg">
+                            <h4 class="font-bold text-[#7a5195]">Promise & Positioning</h4>
+                            <p class="text-sm text-slate-700"><span class="font-semibold">Asana</span> serves as the central work tracker, streamlining project coordination, while <span class="font-semibold">Notion</span> centralizes all knowledge into one flexible workspace for ultimate organization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="distribute" class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-3xl font-bold text-center mb-2">DISTRIBUTE Layer Analysis</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">This client-facing layer handles the entire delivery pipeline, from marketing and sales to community building and payment processing. The primary investments are in all-in-one platforms like Skool and GoHighLevel that replace multiple disparate tools and provide immense value.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-center mb-4">Tool Cost Breakdown (List Price)</h3>
+                        <div class="chart-container" style="height:400px;">
+                            <canvas id="distributeLayerChart"></canvas>
+                        </div>
+                    </div>
+                     <div class="space-y-4">
+                       <div class="p-4 bg-slate-100 rounded-lg">
+                            <h4 class="font-bold text-[#ef5675]">Key Insight</h4>
+                            <p class="text-sm text-slate-700">The two most expensive tools in the entire stack reside here, demonstrating a focus on investing heavily in platforms that directly drive revenue, client engagement, and community growth.</p>
+                        </div>
+                         <div class="p-4 bg-slate-100 rounded-lg">
+                            <h4 class="font-bold text-[#ef5675]">Promise & Positioning</h4>
+                            <p class="text-sm text-slate-700"><span class="font-semibold">GoHighLevel</span> promises to replace multiple marketing tools with one integrated system, while <span class="font-semibold">n8n</span> provides unlimited workflow automation without vendor lock-in, ensuring scalability and control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-center mb-4">Stack Composition by Pricing Model</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">The stack is heavily weighted towards subscription-based services, reflecting a preference for predictable costs and premium features. However, a significant one-third of the stack leverages powerful free-tier tools, highlighting a core strategy of aggressive cost optimization.</p>
+                <div class="chart-container">
+                    <canvas id="pricingModelChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-500 py-8">
+            <p>G.O.D. SOP Interactive Infographic | Data-driven visualization of the L7S Ecosystem.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const palette = {
+                blueDark: '#003f5c',
+                blueMid: '#374c80',
+                purple: '#7a5195',
+                magenta: '#bc5090',
+                pink: '#ef5675',
+                orange: '#ff764a',
+                yellow: '#ffa600'
+            };
+            
+            const brilliantBlues = [palette.blueDark, palette.purple, palette.pink, palette.orange, palette.yellow, palette.blueMid, palette.magenta];
+
+            Chart.defaults.font.family = "'Inter', sans-serif";
+            Chart.defaults.color = '#334155';
+            
+            function wrapLabel(str, maxWidth) {
+                if (str.length <= maxWidth) {
+                    return str;
+                }
+                const words = str.split(' ');
+                let lines = [];
+                let currentLine = words[0];
+
+                for (let i = 1; i < words.length; i++) {
+                    if (currentLine.length + words[i].length + 1 < maxWidth) {
+                        currentLine += ' ' + words[i];
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = words[i];
+                    }
+                }
+                lines.push(currentLine);
+                return lines;
+            }
+            
+            const tooltipTitleCallback = {
+                 plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
+            function initTotalCostChart() {
+                const ctx = document.getElementById('totalCostChart')?.getContext('2d');
+                if (!ctx) return;
+
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['GENERATE', 'OPERATE', 'DISTRIBUTE'],
+                        datasets: [{
+                            label: 'Monthly Cost',
+                            data: [59.99, 88.99, 152.00],
+                            backgroundColor: [palette.blueMid, palette.magenta, palette.orange],
+                            borderColor: '#ffffff',
+                            borderWidth: 4,
+                            hoverOffset: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: tooltipTitleCallback.plugins.tooltip
+                        },
+                        cutout: '60%'
+                    }
+                });
+            }
+
+            function initGenerateLayerChart() {
+                const ctx = document.getElementById('generateLayerChart')?.getContext('2d');
+                if (!ctx) return;
+                
+                const labels = ['Sintra.ai', 'HeyGen', 'Trae.ai', 'Me.bot', 'Perplexity Pro', 'Google AI Pro', 'CapCut'];
+                const data = [97.00, 30.00, 20.00, 20.00, 20.00, 20.00, 9.99];
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels.map(l => wrapLabel(l, 16)),
+                        datasets: [{
+                            label: 'Monthly Cost ($)',
+                            data: data,
+                            backgroundColor: brilliantBlues,
+                            borderColor: brilliantBlues.map(c => c + 'B3'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                         plugins: {
+                            legend: {
+                                display: false
+                            },
+                           tooltip: tooltipTitleCallback.plugins.tooltip
+                        },
+                        scales: {
+                             x: {
+                                beginAtZero: true,
+                                title: { display: true, text: 'Monthly Cost (USD)' }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            function initOperateLayerChart() {
+                const ctx = document.getElementById('operateLayerChart')?.getContext('2d');
+                if (!ctx) return;
+
+                const labels = ['QuickBooks', 'M365 + Teams', 'Asana', 'Google Workspace', 'Notion'];
+                const data = [35.00, 18.50, 13.49, 12.00, 10.00];
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels.map(l => wrapLabel(l, 16)),
+                        datasets: [{
+                            label: 'Monthly Cost ($)',
+                            data: data,
+                            backgroundColor: brilliantBlues,
+                            borderColor: brilliantBlues.map(c => c + 'B3'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: tooltipTitleCallback.plugins.tooltip
+                        },
+                        scales: {
+                             x: {
+                                beginAtZero: true,
+                                title: { display: true, text: 'Monthly Cost (USD)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            function initDistributeLayerChart() {
+                const ctx = document.getElementById('distributeLayerChart')?.getContext('2d');
+                if (!ctx) return;
+                
+                const labels = ['Skool', 'GoHighLevel', 'Twilio', 'DocuSign', 'WhatsApp Business'];
+                const data = [99.00, 97.00, 20.00, 15.00, 5.00];
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels.map(l => wrapLabel(l, 16)),
+                        datasets: [{
+                            label: 'Monthly Cost ($)',
+                            data: data,
+                            backgroundColor: brilliantBlues,
+                            borderColor: brilliantBlues.map(c => c + 'B3'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: tooltipTitleCallback.plugins.tooltip
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                title: { display: true, text: 'Monthly Cost (USD)' }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            function initPricingModelChart() {
+                const ctx = document.getElementById('pricingModelChart')?.getContext('2d');
+                if (!ctx) return;
+
+                new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Subscription', 'Free Tier', 'Transactional'],
+                        datasets: [{
+                            label: '# of Tools',
+                            data: [17, 9, 1],
+                            backgroundColor: [palette.blueDark, palette.pink, palette.yellow],
+                            borderColor: '#ffffff',
+                            borderWidth: 4,
+                            hoverOffset: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                         plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: tooltipTitleCallback.plugins.tooltip
+                        }
+                    }
+                });
+            }
+
+            initTotalCostChart();
+            initGenerateLayerChart();
+            initOperateLayerChart();
+            initDistributeLayerChart();
+            initPricingModelChart();
+        });
+    </script>
+</body>
+</html>
