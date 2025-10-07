@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G.O.D. SOP Tech Stack Infographic</title>
+    <title>G.O.D. SOP Tech Stack Infographic (Exhaustive)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,10 @@
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             text-align: center;
         }
+        .table-cell {
+            padding: 0.75rem 1rem;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -47,7 +51,7 @@
 
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-6xl font-black mb-2 gradient-text">G.O.D. SOP TECH STACK</h1>
-            <p class="text-lg md:text-xl text-slate-600">An Interactive Overview of the 27-Tool Ecosystem for Peak Efficiency</p>
+            <p class="text-lg md:text-xl text-slate-600">The Exhaustive, Comprehensive Overview of the 27-Tool Ecosystem</p>
         </header>
 
         <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
@@ -68,114 +72,167 @@
             <div>
                  <div class="bg-white rounded-lg shadow-md p-6">
                     <h2 class="text-2xl font-bold text-center mb-4">Monthly Cost Contribution by Layer</h2>
-                    <p class="text-center text-slate-600 mb-4">The Distribute layer constitutes the largest portion of the monthly expenditure, driven by high-impact CRM and community platforms.</p>
                     <div class="chart-container">
                         <canvas id="totalCostChart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="mb-16">
-             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold">The G.O.D. Framework Workflow</h2>
-                <p class="text-slate-600 max-w-3xl mx-auto mt-2">The ecosystem is built on a logical three-stage flow: creating assets, managing operations, and delivering value to clients. Each layer seamlessly feeds into the next, creating a unified and powerful operational pipeline.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6 text-center border-t-4 border-[#374c80]">
-                    <h3 class="text-2xl font-bold mb-2">💡 GENERATE</h3>
-                    <p class="text-slate-600">Content creation, AI R&D, and proprietary asset generation to maintain an "AI-First Strategy".</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 text-center border-t-4 border-[#bc5090]">
-                    <h3 class="text-2xl font-bold mb-2">⚙️ OPERATE</h3>
-                    <p class="text-slate-600">Project management, team collaboration, and core business operations, including finance.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6 text-center border-t-4 border-[#ffa600]">
-                    <h3 class="text-2xl font-bold mb-2">🚀 DISTRIBUTE</h3>
-                    <p class="text-slate-600">Client delivery, sales pipeline management, payment processing, and external communications.</p>
-                </div>
-            </div>
-        </section>
-
+        
         <section id="generate" class="mb-16">
             <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-3xl font-bold text-center mb-2">GENERATE Layer Analysis</h2>
-                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">This layer is the creative and intellectual core of the stack. It's dominated by AI-driven tools for content, research, and automation. Sintra.ai represents the most significant investment, serving as a powerful AI overlay for marketing and CRM activities.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4">Tool Cost Breakdown (List Price)</h3>
-                        <div class="chart-container" style="height:400px;">
-                            <canvas id="generateLayerChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="p-4 bg-slate-100 rounded-lg">
-                            <h4 class="font-bold text-[#003f5c]">Key Insight</h4>
-                            <p class="text-sm text-slate-700">The "AI-First Strategy" is evident, with 7 of the 9 tools being AI-centric platforms for content, automation, and research, underscoring a commitment to innovation.</p>
-                        </div>
-                         <div class="p-4 bg-slate-100 rounded-lg">
-                            <h4 class="font-bold text-[#003f5c]">Promise & Positioning</h4>
-                            <p class="text-sm text-slate-700">Tools like <span class="font-semibold">Trae.ai</span> and <span class="font-semibold">Me.bot</span> promise hyper-personalized AI workflows, effectively creating a digital extension of the user's strategic mind for maximum leverage.</p>
-                        </div>
-                    </div>
+                <h2 class="text-3xl font-bold text-center mb-2">💡 GENERATE Layer (9 Tools)</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">Purpose: Content creation, specialized AI R&D, proprietary asset generation, and maintaining the "AI-First Strategy".</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-100 text-slate-600 uppercase">
+                            <tr>
+                                <th class="table-cell">Tool</th>
+                                <th class="table-cell">Platform</th>
+                                <th class="table-cell">Product</th>
+                                <th class="table-cell">Price</th>
+                                <th class="table-cell">Positioning</th>
+                                <th class="table-cell">Promise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">G1. Sintra.ai</td><td class="table-cell">Sintra AI</td><td class="table-cell">AI Automation + Marketing</td><td class="table-cell">$97.00</td><td class="table-cell">AI overlay for CRM + marketing</td><td class="table-cell">Predictive insights + automations</td>
+                            </tr>
+                            <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">G2. Trae.ai</td><td class="table-cell">Trae.ai</td><td class="table-cell">AI Agent & Automation</td><td class="table-cell">$20.00</td><td class="table-cell">Specialized AI agent creation</td><td class="table-cell">Automates complex tasks with bespoke AI</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">G3. Me.bot</td><td class="table-cell">Me.bot</td><td class="table-cell">Personalized AI Assistant</td><td class="table-cell">$20.00</td><td class="table-cell">Hyper-personalized AI for workflows</td><td class="table-cell">Acts as a digital extension of your mind</td>
+                            </tr>
+                            <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">G4. HeyGen</td><td class="table-cell">HeyGen</td><td class="table-cell">AI Video Generation</td><td class="table-cell">$30.00</td><td class="table-cell">AI-powered video creation with avatars</td><td class="table-cell">Creates professional videos without filming</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">G5. CapCut</td><td class="table-cell">CapCut</td><td class="table-cell">Video Editing & Creation</td><td class="table-cell">$9.99</td><td class="table-cell">Versatile short/long-form video editing</td><td class="table-cell">Professional-grade video content creation</td>
+                            </tr>
+                             <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">G6. Perplexity Pro</td><td class="table-cell">Perplexity AI</td><td class="table-cell">AI Search & Research</td><td class="table-cell">$20.00</td><td class="table-cell">AI search with real-time web access</td><td class="table-cell">Delivers accurate, sourced answers</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">G7. Google AI Pro</td><td class="table-cell">Google Gemini</td><td class="table-cell">Generative AI in Workspace</td><td class="table-cell">$20.00</td><td class="table-cell">Native AI integration in Google</td><td class="table-cell">Seamless AI document augmentation</td>
+                            </tr>
+                             <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">G8. CodePen</td><td class="table-cell">CodePen</td><td class="table-cell">Public Demos & Sandboxing</td><td class="table-cell">$0.00</td><td class="table-cell">Public-facing code demonstrations</td><td class="table-cell">Professional code showcasing</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="table-cell font-bold">G9. Genspark</td><td class="table-cell">Genspark</td><td class="table-cell">AI-Powered Search</td><td class="table-cell">$0.00</td><td class="table-cell">AI-native search for summaries</td><td class="table-cell">Delivers comprehensive, synthesized results</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
         <section id="operate" class="mb-16">
             <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-3xl font-bold text-center mb-2">OPERATE Layer Analysis</h2>
-                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">The operational backbone of the ecosystem, this layer focuses on structure, collaboration, and financial management. Costs are well-distributed among essential business software, with a strong emphasis on free-tier tools for development and communication to optimize spending.</p>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4">Tool Cost Breakdown</h3>
-                         <div class="chart-container" style="height:400px;">
-                            <canvas id="operateLayerChart"></canvas>
-                        </div>
-                    </div>
-                    <div class="space-y-4">
-                       <div class="p-4 bg-slate-100 rounded-lg">
-                            <h4 class="font-bold text-[#7a5195]">Key Insight</h4>
-                            <p class="text-sm text-slate-700">Nearly half the tools in this layer (4 of 9) are on free tiers, including foundational development tools like GitHub and Docker, showcasing strategic cost control in core technical operations.</p>
-                        </div>
-                         <div class="p-4 bg-slate-100 rounded-lg">
-                            <h4 class="font-bold text-[#7a5195]">Promise & Positioning</h4>
-                            <p class="text-sm text-slate-700"><span class="font-semibold">Asana</span> serves as the central work tracker, streamlining project coordination, while <span class="font-semibold">Notion</span> centralizes all knowledge into one flexible workspace for ultimate organization.</p>
-                        </div>
-                    </div>
+                <h2 class="text-3xl font-bold text-center mb-2">⚙️ OPERATE Layer (9 Tools)</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">Purpose: Project management, team collaboration, and core business operations, including finance.</p>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-100 text-slate-600 uppercase">
+                            <tr>
+                                <th class="table-cell">Tool</th>
+                                <th class="table-cell">Platform</th>
+                                <th class="table-cell">Product</th>
+                                <th class="table-cell">Price</th>
+                                <th class="table-cell">Positioning</th>
+                                <th class="table-cell">Promise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">O1. QuickBooks</td><td class="table-cell">QuickBooks</td><td class="table-cell">Financial Management</td><td class="table-cell">$35.00</td><td class="table-cell">Complete accounting & reporting</td><td class="table-cell">Professional financial management</td>
+                            </tr>
+                            <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">O2. M365 + Teams</td><td class="table-cell">Microsoft 365</td><td class="table-cell">Office Suite & Collaboration</td><td class="table-cell">$18.50</td><td class="table-cell">Enterprise-grade office apps</td><td class="table-cell">Professional document creation</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">O3. Google Workspace</td><td class="table-cell">Google</td><td class="table-cell">Business Productivity Suite</td><td class="table-cell">$12.00</td><td class="table-cell">Integrated email, docs, collab</td><td class="table-cell">Seamless real-time collaboration</td>
+                            </tr>
+                            <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">O4. Asana</td><td class="table-cell">Asana</td><td class="table-cell">Primary Project Management</td><td class="table-cell">$13.49</td><td class="table-cell">Central work tracker for all divisions</td><td class="table-cell">Streamlines project coordination</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">O5. Notion</td><td class="table-cell">Notion</td><td class="table-cell">All-in-one Workspace</td><td class="table-cell">$10.00</td><td class="table-cell">Combined notes, docs, DBs</td><td class="table-cell">Centralizes all work in one platform</td>
+                            </tr>
+                             <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">O6. Slack</td><td class="table-cell">Slack</td><td class="table-cell">Primary Team Communication</td><td class="table-cell">$0.00</td><td class="table-cell">Main hub for internal comms</td><td class="table-cell">Real-time team coordination</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">O7. GitHub</td><td class="table-cell">GitHub</td><td class="table-cell">Version Control & Collab</td><td class="table-cell">$0.00</td><td class="table-cell">Code repository and collaboration</td><td class="table-cell">Professional version control</td>
+                            </tr>
+                             <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">O8. Docker</td><td class="table-cell">Docker</td><td class="table-cell">Containerization Platform</td><td class="table-cell">$0.00</td><td class="table-cell">Environment consistency</td><td class="table-cell">Consistent dev/deploy environments</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="table-cell font-bold">O9. Cal/Calendly</td><td class="table-cell">Cal/Calendly</td><td class="table-cell">Scheduling & Billing</td><td class="table-cell">$0.00</td><td class="table-cell">Client consultation management</td><td class="table-cell">Streamlined scheduling</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
 
         <section id="distribute" class="mb-16">
             <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-3xl font-bold text-center mb-2">DISTRIBUTE Layer Analysis</h2>
-                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">This client-facing layer handles the entire delivery pipeline, from marketing and sales to community building and payment processing. The primary investments are in all-in-one platforms like Skool and GoHighLevel that replace multiple disparate tools and provide immense value.</p>
-                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-xl font-bold text-center mb-4">Tool Cost Breakdown (List Price)</h3>
-                        <div class="chart-container" style="height:400px;">
-                            <canvas id="distributeLayerChart"></canvas>
-                        </div>
-                    </div>
-                     <div class="space-y-4">
-                       <div class="p-4 bg-slate-100 rounded-lg">
-                            <h4 class="font-bold text-[#ef5675]">Key Insight</h4>
-                            <p class="text-sm text-slate-700">The two most expensive tools in the entire stack reside here, demonstrating a focus on investing heavily in platforms that directly drive revenue, client engagement, and community growth.</p>
-                        </div>
-                         <div class="p-4 bg-slate-100 rounded-lg">
-                            <h4 class="font-bold text-[#ef5675]">Promise & Positioning</h4>
-                            <p class="text-sm text-slate-700"><span class="font-semibold">GoHighLevel</span> promises to replace multiple marketing tools with one integrated system, while <span class="font-semibold">n8n</span> provides unlimited workflow automation without vendor lock-in, ensuring scalability and control.</p>
-                        </div>
-                    </div>
+                <h2 class="text-3xl font-bold text-center mb-2">🚀 DISTRIBUTE Layer (9 Tools)</h2>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">Purpose: Client delivery, sales pipeline management, payment processing, and external communication channels.</p>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-100 text-slate-600 uppercase">
+                            <tr>
+                                <th class="table-cell">Tool</th>
+                                <th class="table-cell">Platform</th>
+                                <th class="table-cell">Product</th>
+                                <th class="table-cell">Price</th>
+                                <th class="table-cell">Positioning</th>
+                                <th class="table-cell">Promise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">D1. GoHighLevel</td><td class="table-cell">GoHighLevel</td><td class="table-cell">All-in-one CRM & Marketing</td><td class="table-cell">$97.00</td><td class="table-cell">Complete business automation</td><td class="table-cell">Replaces multiple tools with one</td>
+                            </tr>
+                            <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">D2. Skool</td><td class="table-cell">Skool</td><td class="table-cell">Community & Course Platform</td><td class="table-cell">$99.00</td><td class="table-cell">All-in-one community platform</td><td class="table-cell">Builds engaged learning communities</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">D3. Twilio</td><td class="table-cell">Twilio</td><td class="table-cell">Telephony & SMS</td><td class="table-cell">$20.00</td><td class="table-cell">Programmatic communication</td><td class="table-cell">Automated notifications and calls</td>
+                            </tr>
+                            <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">D4. DocuSign</td><td class="table-cell">DocuSign</td><td class="table-cell">Document Signing</td><td class="table-cell">$15.00</td><td class="table-cell">Professional contract management</td><td class="table-cell">Secure digital document signing</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">D5. WhatsApp Biz</td><td class="table-cell">WhatsApp</td><td class="table-cell">Business Messaging</td><td class="table-cell">$5.00</td><td class="table-cell">Direct client communication</td><td class="table-cell">Reach clients on preferred platform</td>
+                            </tr>
+                             <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">D6. n8n</td><td class="table-cell">n8n</td><td class="table-cell">Workflow Automation</td><td class="table-cell">$0.00</td><td class="table-cell">Self-hosted workflow automation</td><td class="table-cell">Unlimited automations, no vendor lock-in</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="table-cell font-bold">D7. Netlify</td><td class="table-cell">Netlify</td><td class="table-cell">Hosting & Deployment</td><td class="table-cell">$0.00</td><td class="table-cell">Primary hosting with robust CI/CD</td><td class="table-cell">Seamless deployment and hosting</td>
+                            </tr>
+                             <tr class="border-b bg-slate-50">
+                                <td class="table-cell font-bold">D8. Vercel</td><td class="table-cell">Vercel</td><td class="table-cell">Alternative Hosting</td><td class="table-cell">$0.00</td><td class="table-cell">Drag-and-drop rapid front-end deploy</td><td class="table-cell">Quick deployment for front-end</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="table-cell font-bold">D9. Stripe</td><td class="table-cell">Stripe</td><td class="table-cell">Payment Processing</td><td class="table-cell">Transactional</td><td class="table-cell">Essential payment management</td><td class="table-cell">Seamless client payment processing</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
-        
+
         <section class="mb-16">
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-bold text-center mb-4">Stack Composition by Pricing Model</h2>
-                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">The stack is heavily weighted towards subscription-based services, reflecting a preference for predictable costs and premium features. However, a significant one-third of the stack leverages powerful free-tier tools, highlighting a core strategy of aggressive cost optimization.</p>
+                <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">A significant one-third of the stack leverages powerful free-tier tools, highlighting a core strategy of aggressive cost optimization. The majority are subscription-based, reflecting a preference for predictable costs and premium features.</p>
                 <div class="chart-container">
                     <canvas id="pricingModelChart"></canvas>
                 </div>
@@ -183,7 +240,7 @@
         </section>
 
         <footer class="text-center text-slate-500 py-8">
-            <p>G.O.D. SOP Interactive Infographic | Data-driven visualization of the L7S Ecosystem.</p>
+            <p>G.O.D. SOP Interactive Infographic | The Definitive Data-Driven Visualization of the L7S Ecosystem.</p>
         </footer>
 
     </div>
@@ -201,30 +258,8 @@
                 yellow: '#ffa600'
             };
             
-            const brilliantBlues = [palette.blueDark, palette.purple, palette.pink, palette.orange, palette.yellow, palette.blueMid, palette.magenta];
-
             Chart.defaults.font.family = "'Inter', sans-serif";
             Chart.defaults.color = '#334155';
-            
-            function wrapLabel(str, maxWidth) {
-                if (str.length <= maxWidth) {
-                    return str;
-                }
-                const words = str.split(' ');
-                let lines = [];
-                let currentLine = words[0];
-
-                for (let i = 1; i < words.length; i++) {
-                    if (currentLine.length + words[i].length + 1 < maxWidth) {
-                        currentLine += ' ' + words[i];
-                    } else {
-                        lines.push(currentLine);
-                        currentLine = words[i];
-                    }
-                }
-                lines.push(currentLine);
-                return lines;
-            }
             
             const tooltipTitleCallback = {
                  plugins: {
@@ -274,123 +309,6 @@
                     }
                 });
             }
-
-            function initGenerateLayerChart() {
-                const ctx = document.getElementById('generateLayerChart')?.getContext('2d');
-                if (!ctx) return;
-                
-                const labels = ['Sintra.ai', 'HeyGen', 'Trae.ai', 'Me.bot', 'Perplexity Pro', 'Google AI Pro', 'CapCut'];
-                const data = [97.00, 30.00, 20.00, 20.00, 20.00, 20.00, 9.99];
-
-                new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: labels.map(l => wrapLabel(l, 16)),
-                        datasets: [{
-                            label: 'Monthly Cost ($)',
-                            data: data,
-                            backgroundColor: brilliantBlues,
-                            borderColor: brilliantBlues.map(c => c + 'B3'),
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        indexAxis: 'y',
-                        responsive: true,
-                        maintainAspectRatio: false,
-                         plugins: {
-                            legend: {
-                                display: false
-                            },
-                           tooltip: tooltipTitleCallback.plugins.tooltip
-                        },
-                        scales: {
-                             x: {
-                                beginAtZero: true,
-                                title: { display: true, text: 'Monthly Cost (USD)' }
-                            }
-                        }
-                    }
-                });
-            }
-            
-            function initOperateLayerChart() {
-                const ctx = document.getElementById('operateLayerChart')?.getContext('2d');
-                if (!ctx) return;
-
-                const labels = ['QuickBooks', 'M365 + Teams', 'Asana', 'Google Workspace', 'Notion'];
-                const data = [35.00, 18.50, 13.49, 12.00, 10.00];
-
-                new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: labels.map(l => wrapLabel(l, 16)),
-                        datasets: [{
-                            label: 'Monthly Cost ($)',
-                            data: data,
-                            backgroundColor: brilliantBlues,
-                            borderColor: brilliantBlues.map(c => c + 'B3'),
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        indexAxis: 'y',
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: {
-                                display: false
-                            },
-                            tooltip: tooltipTitleCallback.plugins.tooltip
-                        },
-                        scales: {
-                             x: {
-                                beginAtZero: true,
-                                title: { display: true, text: 'Monthly Cost (USD)' }
-                            }
-                        }
-                    }
-                });
-            }
-
-            function initDistributeLayerChart() {
-                const ctx = document.getElementById('distributeLayerChart')?.getContext('2d');
-                if (!ctx) return;
-                
-                const labels = ['Skool', 'GoHighLevel', 'Twilio', 'DocuSign', 'WhatsApp Business'];
-                const data = [99.00, 97.00, 20.00, 15.00, 5.00];
-
-                new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: labels.map(l => wrapLabel(l, 16)),
-                        datasets: [{
-                            label: 'Monthly Cost ($)',
-                            data: data,
-                            backgroundColor: brilliantBlues,
-                            borderColor: brilliantBlues.map(c => c + 'B3'),
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        indexAxis: 'y',
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: {
-                                display: false
-                            },
-                            tooltip: tooltipTitleCallback.plugins.tooltip
-                        },
-                        scales: {
-                            x: {
-                                beginAtZero: true,
-                                title: { display: true, text: 'Monthly Cost (USD)' }
-                            }
-                        }
-                    }
-                });
-            }
             
             function initPricingModelChart() {
                 const ctx = document.getElementById('pricingModelChart')?.getContext('2d');
@@ -423,11 +341,9 @@
             }
 
             initTotalCostChart();
-            initGenerateLayerChart();
-            initOperateLayerChart();
-            initDistributeLayerChart();
             initPricingModelChart();
         });
     </script>
 </body>
 </html>
+
